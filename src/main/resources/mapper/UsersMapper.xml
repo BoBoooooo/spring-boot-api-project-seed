@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.UsersMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.Users">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="CHAR" property="id" />
+    <result column="DeptID" jdbcType="CHAR" property="deptid" />
+    <result column="RoleID" jdbcType="CHAR" property="roleid" />
+    <result column="GroupID" jdbcType="CHAR" property="groupid" />
+    <result column="IDCard" jdbcType="VARCHAR" property="idcard" />
+    <result column="UserName" jdbcType="VARCHAR" property="username" />
+    <result column="Password" jdbcType="VARCHAR" property="password" />
+    <result column="RealName" jdbcType="VARCHAR" property="realname" />
+    <result column="Gender" jdbcType="VARCHAR" property="gender" />
+    <result column="Email" jdbcType="VARCHAR" property="email" />
+    <result column="Phone" jdbcType="VARCHAR" property="phone" />
+    <result column="Mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="Weixin" jdbcType="VARCHAR" property="weixin" />
+    <result column="QQ" jdbcType="VARCHAR" property="qq" />
+    <result column="Address" jdbcType="VARCHAR" property="address" />
+    <result column="Rank" jdbcType="INTEGER" property="rank" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="creatorID" jdbcType="CHAR" property="creatorid" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="modifierID" jdbcType="CHAR" property="modifierid" />
+    <result column="IsDeleted" jdbcType="BIT" property="isdeleted" />
+    <result column="Timestamp" jdbcType="TIMESTAMP" property="timestamp" />
+  </resultMap>
+</mapper>
