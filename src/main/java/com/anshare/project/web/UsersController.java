@@ -1,8 +1,8 @@
-package com.company.project.web;
-import com.company.project.core.Result;
-import com.company.project.core.ResultGenerator;
-import com.company.project.model.Users;
-import com.company.project.service.UsersService;
+package com.anshare.project.web;
+import com.anshare.project.core.Result;
+import com.anshare.project.core.ResultGenerator;
+import com.anshare.project.model.Users;
+import com.anshare.project.service.UsersService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.web.bind.annotation.PostMapping;

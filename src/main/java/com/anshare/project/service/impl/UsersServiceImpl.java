@@ -1,9 +1,9 @@
-package com.company.project.service.impl;
+package com.anshare.project.service.impl;
 
-import com.company.project.dao.UsersMapper;
-import com.company.project.model.Users;
-import com.company.project.service.UsersService;
-import com.company.project.core.AbstractService;
+import com.anshare.project.core.AbstractService;
+import com.anshare.project.dao.UsersMapper;
+import com.anshare.project.service.UsersService;
+import com.anshare.project.model.Users;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

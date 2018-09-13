@@ -1,4 +1,4 @@
-package com.company.project.core;
+package com.anshare.project.core;
 
 /**
  * 响应结果生成工具

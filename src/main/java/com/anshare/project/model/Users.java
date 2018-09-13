@@ -1,4 +1,4 @@
-package com.company.project.model;
+package com.anshare.project.model;
 
 import java.util.Date;
 import javax.persistence.*;
