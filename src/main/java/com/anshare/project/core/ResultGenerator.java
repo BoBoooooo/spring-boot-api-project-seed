@@ -24,4 +24,9 @@ public class ResultGenerator {
                 .setCode(ResultCode.FAIL)
                 .setMessage(message);
     }
+    public static Result genAuthTokenErrResult(String message) {
+        return new Result()
+                .setCode(ResultCode.UNAUTHORIZED)
+                .setMessage(message);
+    }
 }
