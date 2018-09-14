@@ -37,10 +37,10 @@ public class JWTAuthenticationFilter extends BasicAuthenticationFilter {
         String header = request.getHeader("auth");
         logger.info("拦截请求 JwtFilter");
 
-        if (header == null) {
-            chain.doFilter(request, response);
-            return;
-        }
+//        if (header == null) {
+//            chain.doFilter(request, response);
+//            return;
+//        }
         UsernamePasswordAuthenticationToken authentication = getAuthentication(request);
         SecurityContextHolder.getContext().setAuthentication(authentication);
         chain.doFilter(request, response);
@@ -50,7 +50,7 @@ public class JWTAuthenticationFilter extends BasicAuthenticationFilter {
         long start = System.currentTimeMillis();
         String token = request.getHeader("auth");
         if (token == null || token.isEmpty()) {
-//            throw new TokenException("Token为空");
+            throw new SecurityException("Token为空");
         }
         // parse the token.
         String user = null;

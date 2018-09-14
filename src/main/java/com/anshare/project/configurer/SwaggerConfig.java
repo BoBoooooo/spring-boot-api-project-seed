@@ -32,7 +32,7 @@ import static com.google.common.collect.Lists.newArrayList;
 public class SwaggerConfig {
 
     // 设置默认TOKEN，方便测试
-    private static final String TOKEN = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi1bUk9MRV9BRE1JTiwgQVVUSF9XUklURV0iLCJleHAiOjE1MzU2MTg0MjB9.4geHjqK4DONy8lg0E_NIPUbRJranGOBxmOAXqGS3G3aw903XSwp5kwTAJJBKZgvqPPwGfqUmPXVcNDc_jxeK3Q";
+    private static final String TOKEN = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi1bXSIsImV4cCI6MTUzNzAwNzk1MH0.RR9eOM7ezord8UpmAv8gGDhlOmCpVyAFItiJE9zfjRT1AR6Hqdm_xlHjOTna8YIRzBTQ01SVoOkot-LWdLCaXw";
 
     @Bean
     public Docket api() {
