@@ -29,7 +29,17 @@ import static com.google.common.collect.Lists.newArrayList;
  */
 @Configuration
 @EnableSwagger2
-public class SwaggerConfig {
+public class SwaggerConfig{
+
+    /**
+     * 这个地方要重新注入一下资源文件，不然不会注入资源的，也没有注入requestHandlerMappping,相当于xml配置的
+     *  <!--swagger资源配置-->
+     *  <mvc:resources location="classpath:/META-INF/resources/" mapping="swagger-ui.html"/>
+     *  <mvc:resources location="classpath:/META-INF/resources/webjars/" mapping="/webjars/**"/>
+     *  不知道为什么，这也是spring boot的一个缺点（菜鸟觉得的）
+     * @param registry
+     */
+
 
     // 设置默认TOKEN，方便测试
     private static final String TOKEN = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi1bXSIsImV4cCI6MTUzNzAwNzk1MH0.RR9eOM7ezord8UpmAv8gGDhlOmCpVyAFItiJE9zfjRT1AR6Hqdm_xlHjOTna8YIRzBTQ01SVoOkot-LWdLCaXw";
